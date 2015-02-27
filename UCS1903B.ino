@@ -21,13 +21,9 @@ void setup() {
 	// sanity check delay - allows reprogramming if accidently blowing power w/leds
    	delay(2000);
         //Serial.begin(115200);
-      // Uncomment one of the following lines for your leds arrangement.
-      // FastLED.addLeds<TM1803, DATA_PIN, RGB>(leds, NUM_LEDS);
-      // FastLED.addLeds<TM1804, DATA_PIN, RGB>(leds, NUM_LEDS);
-      // FastLED.addLeds<TM1809, DATA_PIN, RGB>(leds, NUM_LEDS);
+      
       FastLED.addLeds<UCS1903B, DATA_PIN, RGB>(leds, NUM_LEDS);
-      //setLEDArray(redArray);
-      //FastLED.show();
+      
       
 }
 
